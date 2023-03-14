@@ -1,0 +1,128 @@
+package sashko.servicesapp.bookly.model.enums;
+
+public enum ProductType {
+        Haircut(CategoryType.HAIR_SALON),
+        BeardTrim(CategoryType.HAIR_SALON),
+        HairExtension(CategoryType.HAIR_SALON),
+        HairColor(CategoryType.HAIR_SALON),
+        HairDye(CategoryType.HAIR_SALON),
+        MensHaircut(CategoryType.HAIR_SALON),
+        HairImplants(CategoryType.HAIR_SALON),
+        AfricanBraiding(CategoryType.HAIR_SALON),
+        BeardShaping(CategoryType.HAIR_SALON),
+        BeardShave(CategoryType.HAIR_SALON),
+        BeardGrooming(CategoryType.HAIR_SALON),
+        BeardColoring(CategoryType.HAIR_SALON),
+        StraightRazorShape(CategoryType.HAIR_SALON),
+        MustacheTrim(CategoryType.HAIR_SALON),
+
+        Manicure(CategoryType.NAIL_SALON),
+        Pedicure(CategoryType.NAIL_SALON),
+        AcrylicNails(CategoryType.NAIL_SALON),
+        NailArt(CategoryType.NAIL_SALON),
+        NailRepair(CategoryType.NAIL_SALON),
+        GelPedicure(CategoryType.NAIL_SALON),
+        GelNails(CategoryType.NAIL_SALON),
+        NailExtension(CategoryType.NAIL_SALON),
+        GelTips(CategoryType.NAIL_SALON),
+        FrenchManicure(CategoryType.NAIL_SALON),
+        FrenchPedicure(CategoryType.NAIL_SALON),
+        MedicalPedicure(CategoryType.NAIL_SALON),
+        ManicureForMen(CategoryType.NAIL_SALON),
+        PedicureForMen(CategoryType.NAIL_SALON),
+        KidsPedicure(CategoryType.NAIL_SALON),
+
+        Facials(CategoryType.SKIN_CARE),
+        DermaPlanning(CategoryType.SKIN_CARE),
+        Peel(CategoryType.SKIN_CARE),
+        ChemicalPeel(CategoryType.SKIN_CARE),
+        Dermabrassion(CategoryType.SKIN_CARE),
+        Facelift(CategoryType.SKIN_CARE),
+        FacialTreatments(CategoryType.SKIN_CARE),
+        MesoTherapy(CategoryType.SKIN_CARE),
+        FacialRejuvenation(CategoryType.SKIN_CARE),
+        FacePeel(CategoryType.SKIN_CARE),
+        NonSurgicalFaceLift(CategoryType.SKIN_CARE),
+
+        LashLift(CategoryType.EYEBROWS_AND_LASHES),
+        EyelashExtensions(CategoryType.EYEBROWS_AND_LASHES),
+        VolumeLashes(CategoryType.EYEBROWS_AND_LASHES),
+        Microblading(CategoryType.EYEBROWS_AND_LASHES),
+        EyebrowWaxing(CategoryType.EYEBROWS_AND_LASHES),
+        EyebrowShaping(CategoryType.EYEBROWS_AND_LASHES),
+        LashTing(CategoryType.EYEBROWS_AND_LASHES),
+        EyebrowTinting(CategoryType.EYEBROWS_AND_LASHES),
+        FakeEyelashes(CategoryType.EYEBROWS_AND_LASHES),
+        EyebrowThreading(CategoryType.EYEBROWS_AND_LASHES),
+        EyeleashPerm(CategoryType.EYEBROWS_AND_LASHES),
+        EyebrowExtensions(CategoryType.EYEBROWS_AND_LASHES),
+        PermanentEyebrows(CategoryType.EYEBROWS_AND_LASHES),
+        LashLamination(CategoryType.EYEBROWS_AND_LASHES),
+
+        AyuvedicMassage(CategoryType.MASSAGE),
+        HeadMassage(CategoryType.MASSAGE),
+        SwedishMassage(CategoryType.MASSAGE),
+        TwentyFourHourMassage(CategoryType.MASSAGE),
+        DeepTisueMassage(CategoryType.MASSAGE),
+        HotStoneMassage(CategoryType.MASSAGE),
+        Cupping(CategoryType.MASSAGE),
+        SportsMassage(CategoryType.MASSAGE),
+        TherapeuticMassage(CategoryType.MASSAGE),
+        LymphaticMassage(CategoryType.MASSAGE),
+        FootMassage(CategoryType.MASSAGE),
+        CouplesMassage(CategoryType.MASSAGE),
+        FullBodyMassage(CategoryType.MASSAGE),
+        BodyMassage(CategoryType.MASSAGE),
+        BackMassage(CategoryType.MASSAGE),
+        RelaxMassage(CategoryType.MASSAGE),
+        PregnancyMassage(CategoryType.MASSAGE),
+        ThaiMassage(CategoryType.MASSAGE),
+        HawaiianMassage(CategoryType.MASSAGE),
+        AsianMassage(CategoryType.MASSAGE),
+
+        NaturalMakeup(CategoryType.MAKEUP_ARTIST),
+        AirbrushMakeup(CategoryType.MAKEUP_ARTIST),
+        NewYearsMakeup(CategoryType.MAKEUP_ARTIST),
+        BodyPainting(CategoryType.MAKEUP_ARTIST),
+
+        Sauna(CategoryType.DAY_SPA),
+        BodyScrub(CategoryType.DAY_SPA),
+        BodyConturing(CategoryType.DAY_SPA),
+        SprayTan(CategoryType.DAY_SPA),
+        CouplesSpa(CategoryType.DAY_SPA),
+        SugarScrub(CategoryType.DAY_SPA),
+        FacialSpa(CategoryType.DAY_SPA),
+        MensSpa(CategoryType.DAY_SPA),
+        Tanning(CategoryType.DAY_SPA),
+        BridalGroups(CategoryType.DAY_SPA),
+        MeditationRoom(CategoryType.DAY_SPA),
+
+        Tattoo(CategoryType.TATTOO_SHOP),
+        TemporaryTattoos(CategoryType.TATTOO_SHOP),
+        TattooParlors(CategoryType.TATTOO_SHOP),
+        EyebrowTattoo(CategoryType.TATTOO_SHOP),
+        WatercolorTattoo(CategoryType.TATTOO_SHOP),
+
+        WeightLoss(CategoryType.CHIROPRACTIC),
+        BodyComposition(CategoryType.CHIROPRACTIC),
+        NutritionConsultant(CategoryType.CHIROPRACTIC),
+
+        NosePiercing(CategoryType.PIERCING),
+        BodyPiercing(CategoryType.PIERCING),
+        BabyEarPiercing(CategoryType.PIERCING),
+        EarPiercings(CategoryType.PIERCING),
+        BellyButtonPiercing(CategoryType.PIERCING),
+        TongueRings(CategoryType.PIERCING),
+        Weave(CategoryType.PIERCING),
+        Waxing(CategoryType.PIERCING);
+
+        private final CategoryType categoryType;
+
+        ProductType(CategoryType categoryType) {
+                this.categoryType = categoryType;
+        }
+
+        public CategoryType getCategoryType() {
+                return categoryType;
+        }
+}
